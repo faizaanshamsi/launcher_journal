@@ -1,0 +1,8 @@
+<% @entries.each do |entry| %>
+  <%= link_to entry.title, entry %>
+  <%= entry.created_at %>
+  <%= link_to "edit", edit_entry_path(entry) %>
+  <%= link_to "destroy", entry, method: :delete, data: { confirm: 'Are you sure?' } %><br>
+<% end %>
+<%= link_to "new", new_entry_path %><br>
+

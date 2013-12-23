@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-JournalEntry::Application.config.secret_key_base = 'c6afded28489dc9bf0b5f93d54e18cf3ef7393cf9373cd16d1d430b21a8436fabce83736d681bbe0d078ed10359cd6798ac9390fdb153e519fc3aaa0da6abe67'
+JournalEntry::Application.config.secret_key_base = ENV['SECRET_KEY_BASE']
